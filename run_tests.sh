@@ -11,7 +11,7 @@ git clone https://github.com/heroku/php-getting-started.git
 cd php-getting-started
 
 # http://progrium.viewdocs.io/dokku/checks-examples.md
-echo -e "WAIT=10\nATTEMPTS=20\n/ Hello" > CHECKS
+echo -e "WAIT=10\nATTEMPTS=20\n/ This is a sample PHP application deployed to Heroku." > CHECKS
 git config user.email "aal@protonet.info"
 git config user.name "Protonet Integration Test RAILS"
 git add CHECKS

@@ -7,11 +7,11 @@ HOSTIP=$(vagrant ssh-config | awk '/HostName/ {print $2}')
 
 cat /.ssh/id_rsa.pub | vagrant ssh -c "docker exec -i dokku sshcommand acl-add dokku root"
 
-git clone https://github.com/heroku/php-getting-started.git
-cd php-getting-started
+git clone https://github.com/experimental-platform/php-hello-world.git
+cd php-hello-world
 
 # http://progrium.viewdocs.io/dokku/checks-examples.md
-echo -e "WAIT=10\nATTEMPTS=20\n/ This is a sample PHP application deployed to Heroku." > CHECKS
+echo -e "WAIT=10\nATTEMPTS=20\n/ hello" > CHECKS
 git config user.email "aal@protonet.info"
 git config user.name "Protonet Integration Test RAILS"
 git add CHECKS

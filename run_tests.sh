@@ -11,7 +11,7 @@ git clone https://github.com/experimental-platform/php-hello-world.git
 cd php-hello-world
 
 # http://progrium.viewdocs.io/dokku/checks-examples.md
-echo -e "WAIT=10\nATTEMPTS=20\n/ Hello" > CHECKS
+echo -e "WAIT=10\nATTEMPTS=20\n/ hello" > CHECKS
 git config user.email "aal@protonet.info"
 git config user.name "Protonet Integration Test RAILS"
 git add CHECKS
